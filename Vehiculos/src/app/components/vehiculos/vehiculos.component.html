@@ -1,0 +1,24 @@
+<!-- <button (click)=mostrar()>Boton</button><p></p>
+<div *ngFor="let vehiculo of vehiculos">
+    <hr>
+        <a>Marca: {{vehiculo.getMarca()}}</a><p></p>
+        <a>Modelo: {{vehiculo.getModelo()}}</a><p></p>
+        <a>Matricula: {{vehiculo.getMatricula()}}</a><p></p>
+
+    <div *ngIf="vehiculo.unidades>0, else no_disponible">
+        <a>Unidades: {{vehiculo.getUnidades()}}</a><p></p>
+        <a>Precio: {{vehiculo.getPrecio()}}</a><p></p>
+    </div>
+
+    <ng-template #no_disponible>
+        <a>VEHICULO NO DISPONIBLE</a><p></p>
+    </ng-template>
+
+    <hr>
+</div> -->
+
+<input type="text" [(ngModel)]="newconcesionario"><button (click)=anadir()>Añadir</button><p></p>
+
+<div *ngFor="let nombre of concesionario">
+    <h1 [ngStyle]="{'background-color':nombre=='BMW' ? 'red':'blue'}">{{nombre}}</h1>
+</div>

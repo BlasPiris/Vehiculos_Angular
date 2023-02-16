@@ -1,0 +1,8 @@
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+    Nombre: <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="nombre_usr" ><p></p>
+    Apellidos: <input type="text" name="apellidos" #apellidos="ngModel" [(ngModel)]="apellidos_usr" ><p></p>
+    Telefono: <input type="number" name="tel" #tel="ngModel" [(ngModel)]="tel_usr"><p></p>
+    Email: <input type="email" name="email" #email="ngModel" [(ngModel)]="email_usr"><p></p>
+    <input type="submit">
+</form>
+

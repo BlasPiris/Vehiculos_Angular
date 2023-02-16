@@ -1,0 +1,9 @@
+<div *ngFor="let teams of arrayTeams">
+    <p>{{teams.strTeam}}</p>
+    <img  class="img" src="{{teams.strTeamLogo}}">
+</div>
+
+<div *ngFor="let perfil of arrayPerfiles">
+    <p>{{perfil.first_name+" "+perfil.last_name}}</p>
+    <img  class="img" src="{{perfil.avatar}}">
+</div>
